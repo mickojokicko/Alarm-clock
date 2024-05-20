@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  </head>
+  <body>
+    <audio id="TheFlower" src="songs/alarm_song1.wav"></audio>
+    <audio id="TheMidnight" src="songs/alarm_song2.wav"></audio>
+    <audio id="BeautifulSong" src="songs/alarm_song3.wav"></audio>
+    <audio id="Buterfly" src="songs/alarm_song4.wav"></audio>
+
+    <div class="container">
+      <div id="alarmTime">
+        <h1 id="currentTime"><span id="currentDay"> </span></h1>
+      </div>
+      <div class="alarmInputs">
+        <input id="day1" type="checkbox" name="days" value="Monday" /> MON
+        <input id="day2" type="checkbox" name="days" value="Tuesday" /> TUE
+        <input id="day3" type="checkbox" name="days" value="Wednesday" />
+        WED <input id="day4" type="checkbox" name="days" value="Thursday" /> THU
+        <input id="day5" type="checkbox" name="days" value="Friday" /> FRI
+        <input id="day6" type="checkbox" name="days" value="Saturday" /> SAT
+        <input id="day7" type="checkbox" name="days" value="Sunday" />
+        SUN
+      </div>
+      <div class="setAlarmTime">
+        <input id="alarmTimeSet" type="time" />
+      </div>
+      <div class="alarmSongs">
+        <label for="alarmSong">Choose a sound:</label>
+        <select id="alarmSong" name="alarmSong">
+          <option value="TheFlower">TheFlower</option>
+          <option value="TheMidnight">TheMidnight</option>
+          <option value="BeautifulSong">BeautifulSong</option>
+          <option value="Buterfly">Buterfly</option>
+        </select>
+      </div>
+      <div id="alarmButtons">
+        <button class="btn btnSet">SET ALARM</button>
+        <button class="btn btnQuit">check song</button>
+      </div>
+    </div>
+    <div class="lalas">
+      <div class="alarmList"></div>
+    </div>
+    <div class="wakeUp">
+      <h3 id="wakeUp">VRIJEME JE ZA BUĐENJE!!!🥱🤐😎😋</h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
