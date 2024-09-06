@@ -31,6 +31,5 @@ This application is a simple alarm clock that allows users to set alarms and rec
 1. Set the time for the alarm using the input field and add a label if desired.
 2. Press the "Set Alarm" button to save the alarm.
 3. When the alarm time is reached, a notification will alert you.
-4. You can view, edit, or delete alarms from the list displayed on the screen.
 
 ![Alarm App](photo/alarm.png)
