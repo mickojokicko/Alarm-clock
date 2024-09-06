@@ -99,12 +99,6 @@ function daysFromCheckbox() {
   });
   return values;
 }
-// ------------------------------------------
-
-// setInterval(function () {
-//   console.log(displayAlarmTime());
-//   console.log(currentTime);
-// }, 2000);
 
 // _____currentDAy__________
 
@@ -115,14 +109,6 @@ function getDayForExecution(data) {
   data.forEach(mov => {
     if (mov.currentDay.includes(currentDay)) {
       if (mov.time === currentTime) {
-        // const songId = mov.song;
-        // const audioElement = document.getElementById(songId);
-        // if (audioElement) {
-        //   audioElement.play();
-        // } else {
-        //   console.log(`Audio element sa ID-jem ${songId} nije pronađen.`);
-        // }
-        console.log('KONACNOOOOO');
         const modal = document.querySelector('.wakeUp');
         modal.style.display = 'flex';
         setTimeout(() => {
@@ -166,38 +152,3 @@ btnSet.addEventListener('click', function () {
   clearFields();
 });
 btnQuit.addEventListener('click', alarmSongPlay);
-
-// const araj = [
-//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-// ];
-
-// const rond = Math.floor(Math.random() * 20);
-// const noviNiz = araj.sort(() => Math.random() - 0.5);
-
-// const niz = noviNiz.slice(0, 10);
-// console.log(niz);
-// for (let i = 0; i < niz.length; i++) {
-//   setTimeout(() => {
-//     // console.log(`Ovo je ${niz[i]}`);
-//   }, i * 1000);
-// }
-
-// function generisiNasumicneBrojeve() {
-//   const niz = [];
-
-//   while (niz.length < 20) {
-//     const nasumicanBroj = Math.floor(Math.random() * 49) + 1;
-
-//     if (!niz.includes(nasumicanBroj)) {
-//       niz.push(nasumicanBroj);
-//     }
-//   }
-
-//   return niz;
-// }
-
-// const rezultat = generisiNasumicneBrojeve();
-// console.log(rezultat);
-
-// const sortiraniNiz = rezultat.sort((a, b) => a - b);
-// console.log(sortiraniNiz);
